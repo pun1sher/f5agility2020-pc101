@@ -37,5 +37,5 @@ resource "aws_cloudformation_stack" "f5-cluster-across-az-ha" {
   }
 
   #CloudFormation templates triggered from Terraform must be hosted on AWS S3. Experimental hosted in non-canonical S3 bucket.
-  template_url = "https://s3.amazonaws.com/f5-public-cloud/f5-existing-stack-across-az-cluster-payg-2nic-bigip_v5.2.1.template"
+  template_url = "https://f5-cft.s3.amazonaws.com/f5-existing-stack-across-az-cluster-payg-2nic-bigip.template"
 }
